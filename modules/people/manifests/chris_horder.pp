@@ -17,6 +17,7 @@ class people::chris_horder {
   include textmate::textmate2::release
   include netbeans::jee
   include skype
+  include gimp
   include chicken_of_the_vnc
 
   $home     = "/Users/${::boxen_user}"
@@ -32,7 +33,7 @@ class people::chris_horder {
     ensure => installed,
   }
 
-  package { ['wget', 'htop', 'ipcalc', 'aspell', 'lftp', 'tree', 'git-flow', 'gradle', 'pwgen', 'wireshark', 'unrar', 'youtube-dl', 'mtr'] :
+  package { ['wget', 'htop', 'ipcalc', 'aspell', 'lftp', 'tree', 'git-flow', 'gradle', 'pwgen', 'wireshark', 'unrar', 'youtube-dl', 'mtr', 'iftop', 'p7zip'] :
     ensure => installed,
   }
 
