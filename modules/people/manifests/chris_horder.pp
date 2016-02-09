@@ -44,10 +44,10 @@ class people::chris_horder {
   }
   #Add "complete -C aws_completer aws” to was cli install
 
-  ruby::gem { 'tmuxinator for all rubies':
+  ruby_gem { 'tmuxinator for all rubies':
     gem          => 'tmuxinator',
     version      => '~> 0.1',
-    ruby         => 'system'
+    ruby_version => '*'
   }
  
   class { 'osx::global::natural_mouse_scrolling':
